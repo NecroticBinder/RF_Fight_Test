@@ -604,7 +604,7 @@ $(document).ready(function () {
 			
 			if ( this.hp <= this._koValue && this.isUnconscious == false ) {
 				this.isUnconscious = true;
-				windowController.addHit( this.name + " is permanently Knocked Out (or extremely dizzy, and can not resist)! Feel free to use this opportunity! " + this.name + " must not resist! Continue beating them to get a fatality suggestion." );
+				windowController.addHit( this.name + " is permanently Knocked Out (or extremely dizzy, and can not resist)! Feel free to use this opportunity! " + this.name + " must not resist! The fight is over!." );
 			}
 			
 			if ( this.hp <= this._deathValue && this.isDead == false ) { 
