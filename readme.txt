@@ -13,6 +13,8 @@
  - Stage specific hazards/bonuses?
 
 -----------  Patch Notes  -----------------
+v.0.9.5.7 (Auguest 15th, 2014):
+- KO now states fight is ended.
 v.0.9.5.6 (May 8th, 2014):
   - The difficulty of escaping a grapple, throwing someone when grappling, using magic while grappled, and using submission moves are all now affected by the relative strength scores of the combatants. 
   - Misses, dodges, and fumbles on Light Attacks, Heavy Attacks, Grabs, and Tackles will now cost between 2 and 20 stamina less than the full normal cost, based on your Intellect score. Note that the 'full cost' for Grabs and Tackles is 35 or 40, respectively, though the actual amount you pay for either is often reduced.
