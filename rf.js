@@ -532,7 +532,7 @@ $(document).ready(function () {
 			
 			if( this.isUnconscious == false ) {
 				if( this.isEvading == false ) {
-					var stamBonus = 2 + this.willpower();
+					var stamBonus = 2 + this.endurance();
 					this.addStamina(stamBonus);
 				}
 				var manaBonus = 2 + this.willpower();
@@ -1127,8 +1127,8 @@ $(document).ready(function () {
 			}
 			
 			var stamBonus = 30 + (attacker.endurance() * 2);
-			var hpBonus = Math.floor(3 + ( attacker.willpower()/2 ));
-			var manaBonus = hpBonus;
+			var hpBonus = Math.floor(3 + ( attacker.endurance()/2 ));
+			var manaBonus = Math.floor(3 + ( attacker.willpower()/2 ));
 			attacker.addStamina(stamBonus);
 			attacker.addHp(hpBonus);
 			attacker.addMana(manaBonus);
