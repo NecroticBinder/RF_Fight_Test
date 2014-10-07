@@ -13,7 +13,9 @@
  - Stage specific hazards/bonuses?
 
 -----------  Patch Notes  -----------------
-v.0.9.5.7 (Auguest 15th, 2014):
+v.0.9.5.8 (September 7th, 2014):
+-Changed Ranged Attacks, no longer use int to determine damage and their damage has been lowered!
+v.0.9.5.7 (August 15th, 2014):
 - KO now states fight is ended.
 v.0.9.5.6 (May 8th, 2014):
   - The difficulty of escaping a grapple, throwing someone when grappling, using magic while grappled, and using submission moves are all now affected by the relative strength scores of the combatants. 
