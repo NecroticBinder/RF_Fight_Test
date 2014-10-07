@@ -1008,14 +1008,14 @@ $(document).ready(function () {
 			
 			if ( roll <= attackTable.miss ) {	//Miss-- no effect.
 				windowController.addHit( " MISS! " );
-				attacker.hitStamina (requiredStam - 5); 
+				attacker.hitStamina (requiredStam - attacker.intellect()); 
 				return 0; //Failed attack, if we ever need to check that.
 			}
 			
 			if( roll <= attackTable.dodge && target.canDodge(attacker)  ) {	//Dodged-- no effect.
 				windowController.addHit( " DODGE! " );
 				windowController.addHint( target.name + " dodged the attack. " );
-				attacker.hitStamina (requiredStam - 5); 
+				attacker.hitStamina (requiredStam - attacker.intellect()); 
 				return 0; //Failed attack, if we ever need to check that.
 			}	
 
