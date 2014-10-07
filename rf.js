@@ -982,8 +982,8 @@ $(document).ready(function () {
 		actionRanged : function ( roll ) {
 			var attacker = this;
 			var target = battlefield.getTarget();
-			var baseDamage = roll;
-			var damage = Math.max(attacker.dexterity(), attacker.intellect());
+			var baseDamage = Math.max(((roll/4)*3);
+			var damage = Math.max(attacker.dexterity());
 			var requiredStam = 20; 
 			var difficulty = 8; //Base difficulty, rolls greater than this amount will hit.
 		
