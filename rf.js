@@ -982,8 +982,8 @@ $(document).ready(function () {
 		actionRanged : function ( roll ) {
 			var attacker = this;
 			var target = battlefield.getTarget();
-			var baseDamage = Math.max(((roll/4)*3);
-			var damage = Math.max(attacker.dexterity());
+			var baseDamage = roll;
+			var damage = attacker.dexterity();
 			var requiredStam = 20; 
 			var difficulty = 8; //Base difficulty, rolls greater than this amount will hit.
 		
@@ -1008,14 +1008,14 @@ $(document).ready(function () {
 			
 			if ( roll <= attackTable.miss ) {	//Miss-- no effect.
 				windowController.addHit( " MISS! " );
-				attacker.hitStamina (requiredStam - attacker.intellect()); 
+				attacker.hitStamina (requiredStam - 5); 
 				return 0; //Failed attack, if we ever need to check that.
 			}
 			
 			if( roll <= attackTable.dodge && target.canDodge(attacker)  ) {	//Dodged-- no effect.
 				windowController.addHit( " DODGE! " );
 				windowController.addHint( target.name + " dodged the attack. " );
-				attacker.hitStamina (requiredStam - attacker.intellect()); 
+				attacker.hitStamina (requiredStam - 5); 
 				return 0; //Failed attack, if we ever need to check that.
 			}	
 
